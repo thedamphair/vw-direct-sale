@@ -16,18 +16,18 @@
 const API_URL = import.meta.env.VITE_CHAT_API_URL as string | undefined
 
 export async function sendMessage(message: string, sessionId: string): Promise<string> {
-  // ── Real integration (uncomment when API is ready) ──────────────────────
-  // if (!API_URL) throw new Error('VITE_CHAT_API_URL is not set')
-  // const res = await fetch(API_URL, {
-  //   method: 'POST',
-  //   headers: { 'Content-Type': 'application/json' },
-  //   body: JSON.stringify({ message, sessionId }),
-  // })
-  // if (!res.ok) throw new Error(`HTTP ${res.status}`)
-  // const data = await res.json()
-  // return data.response as string
+  if (API_URL) {
+    const res = await fetch(API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message, sessionId }),
+    })
+    if (!res.ok) throw new Error(`HTTP ${res.status}`)
+    const data = await res.json()
+    return data.response as string
+  }
 
-  // ── Stub: simulates a response while the agent is being built ────────────
+  // ── Stub: used when VITE_CHAT_API_URL is not set ─────────────────────────
   await new Promise(r => setTimeout(r, 1200))
 
   const lower = message.toLowerCase()
