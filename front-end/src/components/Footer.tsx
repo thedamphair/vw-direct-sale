@@ -1,3 +1,4 @@
+import VWFSLogo from './VWFSLogo'
 import './Footer.css'
 
 export default function Footer() {
@@ -5,7 +6,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-brand">
-          <a href="#" className="nav-logo">Auto<span>Finance</span></a>
+          <VWFSLogo className="footer-logo-svg" />
           <p>Financiamiento automotriz inteligente. Tu aliado en cada etapa de tu vida sobre ruedas.</p>
         </div>
         <div className="footer-col">
@@ -39,7 +40,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© 2026 AutoFinance. Todos los derechos reservados.</span>
+        <span>© 2026 Volkswagen Financial Services. Todos los derechos reservados.</span>
         <span>Aviso de privacidad · Términos y condiciones · CONDUSEF</span>
       </div>
     </footer>

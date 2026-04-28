@@ -1,9 +1,13 @@
+import { Link } from 'react-router-dom'
+import VWFSLogo from './VWFSLogo'
 import './Nav.css'
 
 export default function Nav() {
   return (
     <nav className="nav">
-      <a href="#" className="nav-logo">Auto<span>Finance</span></a>
+      <Link to="/" className="nav-logo-link">
+        <VWFSLogo className="nav-logo-svg" />
+      </Link>
     </nav>
   )
 }

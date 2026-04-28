@@ -16,9 +16,9 @@
 .seguros-cards { display: flex; flex-direction: column; gap: 1px; background: var(--border); border: 1px solid var(--border); }
 
 .seguro-card { background: var(--white); padding: 28px 32px; transition: background .2s; cursor: pointer; position: relative; }
-.seguro-card:hover { background: #F8FAFF; }
+.seguro-card:hover { background: #F4F9F9; }
 .seguro-card.highlighted { background: var(--navy); display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; }
-.seguro-card.highlighted:hover { background: #002468; }
+.seguro-card.highlighted:hover { background: #005560; }
 
 .seg-name { font-family: 'Barlow Condensed', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--navy); text-transform: uppercase; margin-bottom: 6px; }
 .seguro-card.highlighted .seg-name { color: #fff; }

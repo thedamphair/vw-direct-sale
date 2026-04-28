@@ -6,10 +6,13 @@
   background: var(--navy);
 }
 
-.nav-logo {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800; font-size: 1.4rem;
-  letter-spacing: 0.08em; color: #fff;
-  text-transform: uppercase; text-decoration: none;
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
-.nav-logo span { color: var(--accent); }
+
+.nav-logo-svg {
+  height: 42px;
+  width: auto;
+}
