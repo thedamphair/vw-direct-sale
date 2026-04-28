@@ -102,7 +102,7 @@
 .product-img {
   background: var(--off); min-height: 200px;
   display: flex; align-items: center; justify-content: center;
-  position: relative;
+  position: relative; overflow: hidden;
 }
 .product-img-placeholder {
   width: 80%; height: 60%;

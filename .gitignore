@@ -2,3 +2,7 @@
 
 # Front-end dependencies
 front-end/node_modules/
+
+# Front-end environment variables (contains API URLs and secrets)
+
+front-end/.env.local

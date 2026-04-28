@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { sendMessage } from '../services/bedrock'
+import { detectCarInMessage } from '../services/carsApi'
+import { useCars } from '../context/CarContext'
 import './ChatPanel.css'
 
 interface Message {
@@ -23,6 +25,7 @@ export default function ChatPanel({ open, onClose }: Props) {
   const [loading, setLoading] = useState(false)
   const [sessionId] = useState(() => `sess-${Date.now()}-${Math.random().toString(36).slice(2)}`)
   const bottomRef = useRef<HTMLDivElement>(null)
+  const { cars, setHighlightedCar } = useCars()
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -40,6 +43,10 @@ export default function ChatPanel({ open, onClose }: Props) {
     try {
       const reply = await sendMessage(text, sessionId)
       setMessages(prev => [...prev, { role: 'assistant', content: reply }])
+
+      // Detect if the agent mentioned a specific car and highlight it
+      const matched = detectCarInMessage(reply, cars)
+      if (matched) setHighlightedCar(matched)
     } catch {
       setMessages(prev => [...prev, { role: 'assistant', content: 'Lo siento, hubo un problema al conectar con el asistente. Por favor intenta de nuevo.' }])
     } finally {

@@ -1,21 +1,135 @@
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import PageLayout from '../components/PageLayout'
+import { useCars } from '../context/CarContext'
+import { getCarImage } from '../assets/carImages'
+import type { Car } from '../types/car'
 import carsImg from '../assets/cars.png'
 import './Page.css'
+import './CarPage.css'
 
-const models = [
-  { id: 1, brand: 'Volkswagen', type: 'SUV Premium',   name: 'Tiguan Allspace', price: '$689,900', monthly: '$8,200/mes',  badge: null,   specs: [{ val: '2.0T', key: 'Motor' }, { val: '220hp', key: 'Potencia' }, { val: '7', key: 'Plazas' }, { val: 'DSG', key: 'Trans.' }] },
-  { id: 2, brand: 'Volkswagen', type: 'Sedán',          name: 'Jetta GLi',       price: '$492,500', monthly: '$5,800/mes',  badge: 'hot',  specs: [{ val: '1.4T', key: 'Motor' }, { val: '150hp', key: 'Potencia' }, { val: '5', key: 'Plazas' }, { val: 'DSG', key: 'Trans.' }] },
-  { id: 3, brand: 'Volkswagen', type: 'Hatchback',      name: 'Golf GTI',        price: '$558,000', monthly: '$6,600/mes',  badge: null,   specs: [{ val: '2.0T', key: 'Motor' }, { val: '245hp', key: 'Potencia' }, { val: '5', key: 'Plazas' }, { val: 'DSG', key: 'Trans.' }] },
-  { id: 4, brand: 'Volkswagen', type: 'Eléctrico',      name: 'ID.4 Pro',        price: '$841,000', monthly: '$9,900/mes',  badge: 'elec', specs: [{ val: 'Eléc.', key: 'Motor' }, { val: '204hp', key: 'Potencia' }, { val: '5', key: 'Plazas' }, { val: 'Auto', key: 'Trans.' }] },
-  { id: 5, brand: 'Volkswagen', type: 'SUV Compacta',   name: 'T-Cross',         price: '$398,900', monthly: '$4,700/mes',  badge: null,   specs: [{ val: '1.0T', key: 'Motor' }, { val: '110hp', key: 'Potencia' }, { val: '5', key: 'Plazas' }, { val: 'AT',  key: 'Trans.' }] },
-  { id: 6, brand: 'Audi',       type: 'Hatchback',      name: 'A3 Sedan',        price: '$629,900', monthly: '$7,400/mes',  badge: null,   specs: [{ val: '1.4T', key: 'Motor' }, { val: '150hp', key: 'Potencia' }, { val: '5', key: 'Plazas' }, { val: 'S-Tronic', key: 'Trans.' }] },
-  { id: 7, brand: 'Audi',       type: 'SUV',            name: 'Q5',              price: '$1,049,900','monthly': '$12,300/mes', badge: null, specs: [{ val: '2.0T', key: 'Motor' }, { val: '249hp', key: 'Potencia' }, { val: '5', key: 'Plazas' }, { val: 'S-Tronic', key: 'Trans.' }] },
-  { id: 8, brand: 'Seat',       type: 'Hatchback',      name: 'Leon',            price: '$479,900', monthly: '$5,600/mes',  badge: null,   specs: [{ val: '1.5T', key: 'Motor' }, { val: '150hp', key: 'Potencia' }, { val: '5', key: 'Plazas' }, { val: 'DSG', key: 'Trans.' }] },
-  { id: 9, brand: 'Seat',       type: 'SUV Compacta',   name: 'Arona',           price: '$429,900', monthly: '$5,000/mes',  badge: 'new',  specs: [{ val: '1.0T', key: 'Motor' }, { val: '110hp', key: 'Potencia' }, { val: '5', key: 'Plazas' }, { val: 'AT',  key: 'Trans.' }] },
-]
+// ── Helpers ──────────────────────────────────────────────────────────────────
+
+function formatPrice(n: number) {
+  return '$' + n.toLocaleString('es-MX')
+}
+
+function fuelLabel(f: string) {
+  return { petrol: 'Gasolina', diesel: 'Diésel', electric: 'Eléctrico', hybrid: 'Híbrido' }[f] ?? f
+}
+
+function badgeFor(car: Car) {
+  if (car.fuel_type === 'electric') return 'elec'
+  if (car.condition === 'used') return 'used'
+  return null
+}
+
+// ── Spotlight: shown when agent highlights a car ─────────────────────────────
+
+function CarSpotlight({ car, onDismiss }: { car: Car; onDismiss: () => void }) {
+  const img = getCarImage(car.product_id)
+  return (
+    <div className="car-spotlight">
+      <div className="spotlight-badge">
+        <div className="spotlight-dot" />
+        Recomendado por tu asesor IA
+      </div>
+      <button className="spotlight-dismiss" onClick={onDismiss} aria-label="Cerrar">✕</button>
+
+      <div className="spotlight-body">
+        <div className="spotlight-img">
+          <img src={img.url} alt={img.alt} className="spotlight-photo" />
+          {car.inventory_status === 'sold' && <div className="spotlight-sold-overlay">No disponible</div>}
+        </div>
+
+        <div className="spotlight-info">
+          <div className="spotlight-brand">{car.brand}</div>
+          <h2 className="spotlight-name">{car.name}</h2>
+          <p className="spotlight-desc">{car.description}</p>
+
+          <div className="spotlight-tags">
+            <span className="stag">{car.year}</span>
+            <span className="stag">{fuelLabel(car.fuel_type)}</span>
+            <span className="stag">{car.body_type}</span>
+            <span className="stag">{car.color}</span>
+            {car.condition === 'used' && <span className="stag used">{car.mileage.toLocaleString()} km</span>}
+          </div>
+
+          <div className="spotlight-price-row">
+            <span className="spotlight-price">{formatPrice(car.unit_price)}</span>
+            <span className="spotlight-currency">MXN</span>
+          </div>
+
+          <div className="spotlight-actions">
+            {car.inventory_status === 'available'
+              ? <button className="product-cta spotlight-cta">Cotizar este modelo</button>
+              : <span className="spotlight-unavailable">Unidad no disponible — consulta opciones similares</span>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// ── Car card ─────────────────────────────────────────────────────────────────
+
+function CarCard({ car, highlighted }: { car: Car; highlighted: boolean }) {
+  const ref = useRef<HTMLDivElement>(null)
+  const img = getCarImage(car.product_id)
+
+  useEffect(() => {
+    if (highlighted && ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }
+  }, [highlighted])
+
+  const badge = badgeFor(car)
+
+  return (
+    <div ref={ref} className={`product-card${highlighted ? ' card-highlighted' : ''}${car.inventory_status === 'sold' ? ' card-sold' : ''}`}>
+      <div className="product-img">
+        {badge === 'elec' && <span className="car-badge-tag elec">Eléctrico</span>}
+        {badge === 'used' && <span className="car-badge-tag used">Seminuevo</span>}
+        {car.inventory_status === 'sold' && <div className="card-sold-overlay">No disponible</div>}
+        <img src={img.url} alt={img.alt} className="product-photo" loading="lazy" />
+      </div>
+      <div className="product-info">
+        <div className="product-brand">{car.brand}</div>
+        <div className="product-name">{car.model} <span className="product-color">{car.color}</span></div>
+        <div className="product-price-row">
+          <span className="product-price">{formatPrice(car.unit_price)}</span>
+          <span className="product-currency">MXN</span>
+        </div>
+        <div className="product-tags">
+          <span className="ptag">{car.year}</span>
+          <span className="ptag">{fuelLabel(car.fuel_type)}</span>
+          {car.condition === 'used' && <span className="ptag used">{car.mileage.toLocaleString()} km</span>}
+        </div>
+        <button className="product-cta" disabled={car.inventory_status === 'sold'}>
+          {car.inventory_status === 'sold' ? 'No disponible' : 'Cotizar este modelo'}
+        </button>
+      </div>
+    </div>
+  )
+}
+
+// ── Page ─────────────────────────────────────────────────────────────────────
 
 export default function CarPage() {
+  const { cars, loading, error, highlightedCar, setHighlightedCar } = useCars()
+  const spotlightRef = useRef<HTMLDivElement>(null)
+
+  // Scroll to spotlight when a car is highlighted
+  useEffect(() => {
+    if (highlightedCar && spotlightRef.current) {
+      spotlightRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }, [highlightedCar])
+
+  const available = cars.filter(c => c.inventory_status === 'available')
+  const sold      = cars.filter(c => c.inventory_status === 'sold')
+
   return (
     <PageLayout>
       {/* Hero */}
@@ -40,42 +154,64 @@ export default function CarPage() {
         <a href="#catalogo" className="fin-bar-cta">Calcular mensualidad →</a>
       </div>
 
-      {/* Catalog */}
+      {/* ── Agent spotlight ── */}
+      {highlightedCar && (
+        <div ref={spotlightRef} className="spotlight-wrapper">
+          <CarSpotlight car={highlightedCar} onDismiss={() => setHighlightedCar(null)} />
+        </div>
+      )}
+
+      {/* ── Catalog ── */}
       <section className="page-section" id="catalogo">
         <div className="page-section-header">
           <div className="section-label">Catálogo completo</div>
-          <div className="section-title">Todos los modelos</div>
+          <div className="section-title">
+            {loading ? 'Cargando vehículos…' : `${available.length} vehículos disponibles`}
+          </div>
         </div>
-        <div className="product-grid">
-          {models.map(car => (
-            <div key={car.id} className="product-card">
-              <div className="product-img">
-                {car.badge === 'hot'  && <span className="car-badge-tag hot">Más vendido</span>}
-                {car.badge === 'elec' && <span className="car-badge-tag elec">Eléctrico</span>}
-                {car.badge === 'new'  && <span className="car-badge-tag new">Nuevo</span>}
-                <div className="product-img-placeholder"><span className="img-label">{car.brand} · {car.type}</span></div>
-              </div>
-              <div className="product-info">
-                <div className="product-brand">{car.brand}</div>
-                <div className="product-name">{car.name}</div>
-                <div className="product-price-row">
-                  <span className="product-price">{car.price}</span>
-                  <span className="product-currency">MXN</span>
+
+        {error && (
+          <div className="cars-error">
+            No se pudo cargar el inventario. Por favor intenta de nuevo.
+          </div>
+        )}
+
+        {loading && (
+          <div className="cars-loading">
+            {[...Array(6)].map((_, i) => <div key={i} className="car-skeleton" />)}
+          </div>
+        )}
+
+        {!loading && !error && (
+          <>
+            <div className="product-grid">
+              {available.map(car => (
+                <CarCard
+                  key={car.product_id}
+                  car={car}
+                  highlighted={highlightedCar?.product_id === car.product_id}
+                />
+              ))}
+            </div>
+
+            {sold.length > 0 && (
+              <>
+                <div className="cars-divider">
+                  <span>Unidades no disponibles</span>
                 </div>
-                <div className="product-monthly">{car.monthly}</div>
-                <div className="product-specs">
-                  {car.specs.map(s => (
-                    <div key={s.key} className="spec">
-                      <div className="spec-val">{s.val}</div>
-                      <div className="spec-key">{s.key}</div>
-                    </div>
+                <div className="product-grid product-grid-muted">
+                  {sold.map(car => (
+                    <CarCard
+                      key={car.product_id}
+                      car={car}
+                      highlighted={highlightedCar?.product_id === car.product_id}
+                    />
                   ))}
                 </div>
-                <button className="product-cta">Cotizar este modelo</button>
-              </div>
-            </div>
-          ))}
-        </div>
+              </>
+            )}
+          </>
+        )}
       </section>
     </PageLayout>
   )
