@@ -1,0 +1,45 @@
+[
+  {
+    "discount_id": 1, "code": "NEWCLIENT10",
+    "description": "10% off for new clients on any purchase",
+    "type": "percent", "value": 10.00,
+    "valid_from": "2024-01-01", "valid_to": "2026-12-31",
+    "scope": "new_client", "is_active": true
+  },
+  {
+    "discount_id": 2, "code": "LOYALTY5",
+    "description": "5% loyalty discount for existing clients",
+    "type": "percent", "value": 5.00,
+    "valid_from": "2024-01-01", "valid_to": "2026-12-31",
+    "scope": "existing_client", "is_active": true
+  },
+  {
+    "discount_id": 3, "code": "ELECTRIC10000",
+    "description": "$10,000 MXN off any electric vehicle",
+    "type": "fixed", "currency": "MXN", "value": 10000.00,
+    "valid_from": "2024-01-01", "valid_to": "2026-12-31",
+    "scope": "car", "is_active": true
+  },
+  {
+    "discount_id": 4, "code": "INSURANCE20",
+    "description": "20% off insurance when bought with a car",
+    "type": "percent", "value": 20.00,
+    "valid_from": "2024-01-01", "valid_to": "2026-12-31",
+    "scope": "insurance", "is_active": true
+  },
+  {
+    "discount_id": 5, "code": "SUMMER24",
+    "description": "Summer campaign: $6,000 MXN off any car",
+    "type": "fixed", "currency": "MXN", "value": 6000.00,
+    "valid_from": "2024-06-01", "valid_to": "2024-08-31",
+    "scope": "car", "is_active": false,
+    "note": "Expired campaign, kept for historical reference"
+  },
+  {
+    "discount_id": 6, "code": "SERVICE15",
+    "description": "15% off maintenance services for existing clients",
+    "type": "percent", "value": 15.00,
+    "valid_from": "2024-01-01", "valid_to": "2026-12-31",
+    "scope": "after_sales", "is_active": true
+  }
+]

@@ -1,0 +1,14 @@
+[
+  { "model_id": 1,  "brand_id": 1, "brand": "Volkswagen", "name": "Golf",   "year": 2024, "currency": "MXN", "base_price": 489900.00, "body_type": "hatchback", "fuel_type": "petrol",   "description": "Iconic compact hatchback, sporty and practical" },
+  { "model_id": 2,  "brand_id": 1, "brand": "Volkswagen", "name": "Tiguan", "year": 2024, "currency": "MXN", "base_price": 689900.00, "body_type": "suv",       "fuel_type": "diesel",   "description": "Versatile family SUV with premium comfort" },
+  { "model_id": 3,  "brand_id": 1, "brand": "Volkswagen", "name": "Passat", "year": 2024, "currency": "MXN", "base_price": 779900.00, "body_type": "sedan",     "fuel_type": "hybrid",   "description": "Executive sedan with plug-in hybrid powertrain" },
+  { "model_id": 4,  "brand_id": 1, "brand": "Volkswagen", "name": "ID.4",   "year": 2024, "currency": "MXN", "base_price": 899900.00, "body_type": "suv",       "fuel_type": "electric", "description": "Fully electric SUV with 520km range" },
+  { "model_id": 5,  "brand_id": 2, "brand": "Audi",       "name": "A3",     "year": 2024, "currency": "MXN", "base_price": 629900.00, "body_type": "hatchback", "fuel_type": "petrol",   "description": "Premium compact with refined interior" },
+  { "model_id": 6,  "brand_id": 2, "brand": "Audi",       "name": "Q5",     "year": 2024, "currency": "MXN", "base_price": 1049900.00,"body_type": "suv",       "fuel_type": "diesel",   "description": "Mid-size luxury SUV, quattro all-wheel drive" },
+  { "model_id": 7,  "brand_id": 2, "brand": "Audi",       "name": "A6",     "year": 2024, "currency": "MXN", "base_price": 1249900.00,"body_type": "sedan",     "fuel_type": "hybrid",   "description": "Business sedan with MHEV technology" },
+  { "model_id": 8,  "brand_id": 2, "brand": "Audi",       "name": "e-tron", "year": 2024, "currency": "MXN", "base_price": 1499900.00,"body_type": "suv",       "fuel_type": "electric", "description": "Audi flagship electric SUV" },
+  { "model_id": 9,  "brand_id": 3, "brand": "Seat",       "name": "Ibiza",  "year": 2024, "currency": "MXN", "base_price": 349900.00, "body_type": "hatchback", "fuel_type": "petrol",   "description": "Urban compact, fun to drive and fuel efficient" },
+  { "model_id": 10, "brand_id": 3, "brand": "Seat",       "name": "Arona",  "year": 2024, "currency": "MXN", "base_price": 429900.00, "body_type": "suv",       "fuel_type": "petrol",   "description": "Compact crossover ideal for city and road trips" },
+  { "model_id": 11, "brand_id": 3, "brand": "Seat",       "name": "Leon",   "year": 2024, "currency": "MXN", "base_price": 479900.00, "body_type": "hatchback", "fuel_type": "diesel",   "description": "Dynamic hatchback with sporty design" },
+  { "model_id": 12, "brand_id": 3, "brand": "Seat",       "name": "Ateca",  "year": 2024, "currency": "MXN", "base_price": 589900.00, "body_type": "suv",       "fuel_type": "hybrid",   "description": "Family SUV with mild hybrid efficiency" }
+]
