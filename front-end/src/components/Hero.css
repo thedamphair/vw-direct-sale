@@ -75,11 +75,11 @@
 }
 .hero-panel + .hero-panel { border-left: 1px solid var(--border); }
 .hp-1 { background: #ffffff; }
-.hp-2 { background: #F8FAFF; }
-.hp-3 { background: #F5F7FB; }
-.hp-1:hover { background: #EEF4FF; }
-.hp-2:hover { background: #E8F0FF; }
-.hp-3:hover { background: #E5ECFA; }
+.hp-2 { background: #F4F9F9; }
+.hp-3 { background: #EFF5F5; }
+.hp-1:hover { background: #E8F4F4; }
+.hp-2:hover { background: #E0F0F0; }
+.hp-3:hover { background: #D8ECEC; }
 
 .hero-panel::after {
   content: '';
@@ -150,11 +150,11 @@
 
 .delivery-pill {
   display: inline-flex; align-items: center; gap: 7px;
-  border: 1px solid rgba(0,85,200,0.2); border-radius: 20px;
+  border: 1px solid rgba(0,135,158,0.2); border-radius: 20px;
   padding: 5px 13px; font-size: 0.68rem; font-weight: 600;
   letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--accent); margin-bottom: 16px; width: fit-content;
-  background: rgba(0,85,200,0.06);
+  background: rgba(0,135,158,0.06);
 }
 .delivery-pill-dot {
   width: 5px; height: 5px; border-radius: 50%;

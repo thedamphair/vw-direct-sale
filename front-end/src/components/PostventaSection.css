@@ -5,10 +5,10 @@
 .pv-card { background: var(--white); transition: background .2s; cursor: pointer; }
 .pv-card:hover { background: var(--off); }
 .pv-card.dark { background: var(--navy); }
-.pv-card.dark:hover { background: #002260; }
+.pv-card.dark:hover { background: #005560; }
 
 .pv-top { padding: 36px 32px 24px; position: relative; }
-.pv-num { position: absolute; top: 20px; right: 24px; font-family: 'Barlow Condensed', sans-serif; font-size: 3.5rem; font-weight: 800; color: rgba(0,30,80,0.05); line-height: 1; user-select: none; }
+.pv-num { position: absolute; top: 20px; right: 24px; font-family: 'Barlow Condensed', sans-serif; font-size: 3.5rem; font-weight: 800; color: rgba(0,69,79,0.05); line-height: 1; user-select: none; }
 .pv-card.dark .pv-num { color: rgba(255,255,255,0.04); }
 
 .pv-icon { width: 44px; height: 44px; background: var(--off2); border-radius: 2px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 1.2rem; }
@@ -28,7 +28,7 @@
 .pv-card.dark .pv-cta:hover { color: #fff; }
 
 .pv-tag { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; background: var(--off2); color: var(--muted); }
-.pv-tag.blue { background: rgba(0,85,200,0.08); color: var(--accent); }
+.pv-tag.blue { background: rgba(0,135,158,0.08); color: var(--accent); }
 .pv-tag.dark-tag { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.3); }
 
 .loyalty-dots { display: flex; gap: 5px; margin: 16px 0 6px; }

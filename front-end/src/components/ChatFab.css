@@ -7,7 +7,7 @@
   font-family: 'Barlow', sans-serif;
   font-size: 0.82rem; font-weight: 600;
   letter-spacing: 0.07em; text-transform: uppercase;
-  box-shadow: 0 8px 32px rgba(0,30,80,0.25);
+  box-shadow: 0 8px 32px rgba(0,69,79,0.25);
   transition: background .2s, transform .2s;
 }
 .chat-fab:hover { background: var(--blue); transform: translateY(-2px); }

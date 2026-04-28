@@ -40,7 +40,7 @@ export async function sendMessage(message: string, sessionId: string): Promise<s
   if (lower.includes('financiamiento') || lower.includes('mensualidad') || lower.includes('enganche'))
     return 'Ofrecemos financiamiento desde el 10% de enganche, tasas desde 7.9% anual y hasta 84 meses. También trabajamos con Santander y CaixaBank para opciones externas. ¿Quieres que calcule tu mensualidad para algún modelo?'
   if (lower.includes('hola') || lower.includes('buenos') || lower.includes('buenas'))
-    return '¡Hola! Bienvenido a AutoFinance. Puedo ayudarte con información sobre nuestros vehículos Volkswagen, Audi y Seat, seguros, financiamiento y servicios postventa. ¿Por dónde empezamos?'
+    return '¡Hola! Bienvenido a Volkswagen Financial Services. Puedo ayudarte con información sobre nuestros vehículos Volkswagen, Audi y Seat, seguros, financiamiento y servicios postventa. ¿Por dónde empezamos?'
 
   return 'Entendido. Déjame conectarte con la información más relevante. ¿Estás buscando un vehículo nuevo, cotizar un seguro o tienes alguna pregunta sobre tu crédito actual?'
 }

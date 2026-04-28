@@ -17,10 +17,10 @@ export default function SegurosSection() {
 
       <div className="seguros-layout">
         <div className="seguros-intro">
-          <p>Ofrecemos cobertura integral adaptada a tu perfil. Desde protección básica hasta amplia sin deducible, con asistencia vial 24/7 y atención preferencial para clientes AutoFinance.</p>
+          <p>Ofrecemos cobertura integral adaptada a tu perfil. Desde protección básica hasta amplia sin deducible, con asistencia vial 24/7 y atención preferencial para clientes VW Financial Services.</p>
           <div className="seguros-callout">
             <p>"Al adquirir tu auto con nosotros, obtienes hasta 30% de descuento en tu primera póliza."</p>
-            <cite>Beneficio exclusivo AutoFinance</cite>
+            <cite>Beneficio exclusivo VW Financial Services</cite>
           </div>
           <div className="seguros-actions">
             <Link to="/insurance" className="btn-primary">Cotizar mi seguro</Link>

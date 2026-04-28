@@ -6,12 +6,12 @@
   display: flex; align-items: flex-end;
   background: var(--navy) center/cover no-repeat;
 }
-.page-hero-insurance  { background-color: #001E50; }
-.page-hero-aftersales { background-color: #001030; }
+.page-hero-insurance  { background-color: #00454F; }
+.page-hero-aftersales { background-color: #003038; }
 
 .page-hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(to right, rgba(0,30,80,0.92) 50%, rgba(0,30,80,0.6));
+  background: linear-gradient(to right, rgba(0,69,79,0.92) 50%, rgba(0,69,79,0.6));
 }
 .page-hero-content {
   position: relative; z-index: 1;
@@ -80,9 +80,9 @@
   margin-left: auto; flex-shrink: 0;
   font-size: 0.65rem; font-weight: 700;
   letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--accent); border: 1px solid rgba(0,113,227,0.3);
+  color: var(--accent); border: 1px solid rgba(0,135,158,0.3);
   padding: 5px 14px; border-radius: 2px;
-  background: rgba(0,113,227,0.06);
+  background: rgba(0,135,158,0.06);
 }
 
 /* ── Page sections ── */
@@ -106,7 +106,7 @@
 }
 .product-img-placeholder {
   width: 80%; height: 60%;
-  background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0,30,80,0.04) 10px, rgba(0,30,80,0.04) 11px);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0,69,79,0.04) 10px, rgba(0,69,79,0.04) 11px);
   display: flex; align-items: center; justify-content: center;
 }
 .product-info { padding: 22px 26px; }
@@ -140,9 +140,9 @@
   display: flex; flex-direction: column; gap: 0;
   transition: background .2s; cursor: pointer;
 }
-.insurance-card:hover { background: #F8FAFF; }
+.insurance-card:hover { background: #F4F9F9; }
 .insurance-card.highlighted { background: var(--navy); }
-.insurance-card.highlighted:hover { background: #002468; }
+.insurance-card.highlighted:hover { background: #005560; }
 
 .ins-tag { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
 .insurance-card.highlighted .ins-tag { color: rgba(255,255,255,0.5); }
@@ -154,10 +154,12 @@
 .ins-features li { font-size: 0.78rem; color: var(--muted); padding-left: 14px; position: relative; }
 .insurance-card.highlighted .ins-features li { color: rgba(255,255,255,0.55); }
 .ins-features li::before { content: ''; position: absolute; left: 0; top: 7px; width: 6px; height: 1px; background: var(--accent); }
-.ins-price-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 20px; }
+.ins-price-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px; }
 .ins-price { font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 800; color: var(--accent); }
 .ins-period { font-size: 0.75rem; color: var(--muted); }
 .insurance-card.highlighted .ins-period { color: rgba(255,255,255,0.4); }
+.ins-annual { font-size: 0.72rem; color: var(--muted); margin-bottom: 20px; }
+.insurance-card.highlighted .ins-annual { color: rgba(255,255,255,0.35); }
 
 /* ── After-sales grid ── */
 .aftersales-grid {
@@ -209,4 +211,268 @@
 .spec-val { font-family: 'Barlow Condensed', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--navy); }
 .spec-key { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
 .pv-tag { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; background: var(--off2); color: var(--muted); }
-.pv-tag.blue { background: rgba(0,85,200,0.08); color: var(--accent); }
+.pv-tag.blue { background: rgba(0,135,158,0.08); color: var(--accent); }
+
+/* ── Insurance Agent Section ── */
+.ins-agent-section {
+  background: var(--navy);
+  padding: 80px 64px;
+}
+
+.ins-agent-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.ins-agent-intro .section-label {
+  color: rgba(0, 135, 158, 0.8);
+}
+
+.ins-agent-intro .section-label::before {
+  background: rgba(0, 135, 158, 0.8);
+}
+
+.ins-agent-intro .section-title {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.ins-agent-desc {
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.8;
+  max-width: 400px;
+  margin-bottom: 32px;
+}
+
+.ins-agent-features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ins-agent-feat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 500;
+}
+
+.ins-agent-feat-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.ins-agent-chat {
+  min-width: 0;
+}
+
+/* ── Insurance Benefits ── */
+.ins-benefits-section { background: var(--off); }
+
+.ins-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.ins-benefit-card {
+  background: var(--white);
+  padding: 36px 32px;
+  transition: background 0.2s;
+  cursor: default;
+}
+.ins-benefit-card:hover { background: #F4F9F9; }
+
+.ins-benefit-icon {
+  width: 48px; height: 48px;
+  background: var(--off2);
+  border-radius: 2px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.ins-benefit-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.ins-benefit-desc {
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ── Insurance Comparison Table ── */
+.ins-compare-section { background: var(--white); }
+
+.ins-compare-table-wrap {
+  border: 1px solid var(--border);
+  overflow-x: auto;
+}
+
+.ins-compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.ins-compare-table thead {
+  background: var(--navy);
+}
+
+.ins-compare-table th {
+  padding: 18px 24px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+.ins-compare-table th:first-child {
+  text-align: left;
+  color: rgba(255,255,255,0.5);
+}
+
+.ins-compare-table th:last-child {
+  border-right: none;
+}
+
+.ins-th-highlight {
+  background: rgba(0,135,158,0.15);
+  color: #fff !important;
+}
+
+.ins-compare-table td {
+  padding: 14px 24px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  color: var(--text);
+}
+
+.ins-compare-table td:last-child {
+  border-right: none;
+}
+
+.ins-td-highlight {
+  background: rgba(0,135,158,0.03);
+}
+
+.ins-compare-label {
+  text-align: left !important;
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 0.82rem;
+}
+
+.ins-compare-price-row {
+  background: var(--off);
+}
+
+.ins-compare-price-row td {
+  border-top: 2px solid var(--border);
+}
+
+.ins-compare-price-row strong {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.ins-compare-price-row .ins-td-highlight strong {
+  color: var(--accent);
+}
+
+.ins-check {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.ins-cross {
+  color: var(--border);
+  font-size: 1rem;
+}
+
+.ins-cell-text {
+  font-size: 0.8rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* ── Insurance FAQ ── */
+.ins-faq-list {
+  border: 1px solid var(--border);
+}
+
+.ins-faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.ins-faq-item:last-child {
+  border-bottom: none;
+}
+
+.ins-faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 28px;
+  background: var(--white);
+  border: none;
+  cursor: pointer;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--navy);
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.ins-faq-question:hover {
+  background: var(--off);
+}
+
+.ins-faq-item.open .ins-faq-question {
+  background: var(--off);
+}
+
+.ins-faq-toggle {
+  flex-shrink: 0;
+  width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem;
+  color: var(--accent);
+  font-weight: 300;
+}
+
+.ins-faq-answer {
+  padding: 0 28px 24px;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.75;
+  background: var(--off);
+}
