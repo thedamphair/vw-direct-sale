@@ -4,7 +4,7 @@
     "brand": "Volkswagen", "model": "Golf", "year": 2024,
     "body_type": "hatchback", "fuel_type": "petrol",
     "color": "Pearl White", "mileage": 0, "condition": "new",
-    "unit_price": 28500.00, "vin": "WVWZZZ1KZAW000001",
+    "currency": "MXN", "unit_price": 489900.00, "vin": "WVWZZZ1KZAW000001",
     "inventory_status": "available",
     "description": "Golf hatchback petrol, pearl white"
   },
@@ -13,7 +13,7 @@
     "brand": "Volkswagen", "model": "Golf", "year": 2024,
     "body_type": "hatchback", "fuel_type": "petrol",
     "color": "Deep Black", "mileage": 0, "condition": "new",
-    "unit_price": 28500.00, "vin": "WVWZZZ1KZAW000002",
+    "currency": "MXN", "unit_price": 489900.00, "vin": "WVWZZZ1KZAW000002",
     "inventory_status": "available",
     "description": "Golf hatchback petrol, deep black"
   },
@@ -22,7 +22,7 @@
     "brand": "Volkswagen", "model": "Tiguan", "year": 2024,
     "body_type": "suv", "fuel_type": "diesel",
     "color": "Reflex Silver", "mileage": 0, "condition": "new",
-    "unit_price": 38900.00, "vin": "WVWZZZ5NZAW000003",
+    "currency": "MXN", "unit_price": 689900.00, "vin": "WVWZZZ5NZAW000003",
     "inventory_status": "available",
     "description": "Tiguan SUV diesel, reflex silver"
   },
@@ -31,7 +31,7 @@
     "brand": "Volkswagen", "model": "Tiguan", "year": 2024,
     "body_type": "suv", "fuel_type": "diesel",
     "color": "Atlantic Blue", "mileage": 0, "condition": "new",
-    "unit_price": 38900.00, "vin": "WVWZZZ5NZAW000004",
+    "currency": "MXN", "unit_price": 689900.00, "vin": "WVWZZZ5NZAW000004",
     "inventory_status": "available",
     "description": "Tiguan SUV diesel, atlantic blue"
   },
@@ -40,7 +40,7 @@
     "brand": "Volkswagen", "model": "Passat", "year": 2024,
     "body_type": "sedan", "fuel_type": "hybrid",
     "color": "Moonstone Grey", "mileage": 0, "condition": "new",
-    "unit_price": 42000.00, "vin": "WVWZZZ3CZAW000005",
+    "currency": "MXN", "unit_price": 779900.00, "vin": "WVWZZZ3CZAW000005",
     "inventory_status": "sold",
     "description": "Passat hybrid sedan, moonstone grey"
   },
@@ -49,7 +49,7 @@
     "brand": "Volkswagen", "model": "ID.4", "year": 2024,
     "body_type": "suv", "fuel_type": "electric",
     "color": "Glacier White", "mileage": 0, "condition": "new",
-    "unit_price": 45500.00, "vin": "WVWZZZ1EZAW000006",
+    "currency": "MXN", "unit_price": 899900.00, "vin": "WVWZZZ1EZAW000006",
     "inventory_status": "available",
     "description": "ID.4 electric SUV, glacier white"
   },
@@ -58,7 +58,7 @@
     "brand": "Audi", "model": "A3", "year": 2024,
     "body_type": "hatchback", "fuel_type": "petrol",
     "color": "Mythos Black", "mileage": 0, "condition": "new",
-    "unit_price": 35000.00, "vin": "WAUZZZ8V5NA000007",
+    "currency": "MXN", "unit_price": 629900.00, "vin": "WAUZZZ8V5NA000007",
     "inventory_status": "available",
     "description": "A3 hatchback petrol, mythos black"
   },
@@ -67,7 +67,7 @@
     "brand": "Audi", "model": "Q5", "year": 2024,
     "body_type": "suv", "fuel_type": "diesel",
     "color": "Daytona Grey", "mileage": 0, "condition": "new",
-    "unit_price": 58000.00, "vin": "WAUZZZ8R5NA000008",
+    "currency": "MXN", "unit_price": 1049900.00, "vin": "WAUZZZ8R5NA000008",
     "inventory_status": "available",
     "description": "Q5 SUV diesel quattro, daytona grey"
   },
@@ -76,7 +76,7 @@
     "brand": "Audi", "model": "A6", "year": 2024,
     "body_type": "sedan", "fuel_type": "hybrid",
     "color": "Floret Silver", "mileage": 0, "condition": "new",
-    "unit_price": 65000.00, "vin": "WAUZZZ4G5NA000009",
+    "currency": "MXN", "unit_price": 1249900.00, "vin": "WAUZZZ4G5NA000009",
     "inventory_status": "available",
     "description": "A6 hybrid sedan, floret silver"
   },
@@ -85,7 +85,7 @@
     "brand": "Audi", "model": "e-tron", "year": 2024,
     "body_type": "suv", "fuel_type": "electric",
     "color": "Plasma Blue", "mileage": 0, "condition": "new",
-    "unit_price": 72000.00, "vin": "WAUZZZ4G5NA000010",
+    "currency": "MXN", "unit_price": 1499900.00, "vin": "WAUZZZ4G5NA000010",
     "inventory_status": "sold",
     "description": "e-tron electric SUV, plasma blue"
   },
@@ -94,7 +94,7 @@
     "brand": "Seat", "model": "Ibiza", "year": 2024,
     "body_type": "hatchback", "fuel_type": "petrol",
     "color": "Desire Red", "mileage": 0, "condition": "new",
-    "unit_price": 19500.00, "vin": "VSSZZZ6JZNA000011",
+    "currency": "MXN", "unit_price": 349900.00, "vin": "VSSZZZ6JZNA000011",
     "inventory_status": "available",
     "description": "Ibiza hatchback petrol, desire red"
   },
@@ -103,7 +103,7 @@
     "brand": "Seat", "model": "Ibiza", "year": 2024,
     "body_type": "hatchback", "fuel_type": "petrol",
     "color": "Nevada White", "mileage": 0, "condition": "new",
-    "unit_price": 19500.00, "vin": "VSSZZZ6JZNA000012",
+    "currency": "MXN", "unit_price": 349900.00, "vin": "VSSZZZ6JZNA000012",
     "inventory_status": "available",
     "description": "Ibiza hatchback petrol, nevada white"
   },
@@ -112,7 +112,7 @@
     "brand": "Seat", "model": "Arona", "year": 2024,
     "body_type": "suv", "fuel_type": "petrol",
     "color": "Lava Orange", "mileage": 0, "condition": "new",
-    "unit_price": 24000.00, "vin": "VSSZZZ6JZNA000013",
+    "currency": "MXN", "unit_price": 429900.00, "vin": "VSSZZZ6JZNA000013",
     "inventory_status": "sold",
     "description": "Arona crossover petrol, lava orange"
   },
@@ -121,7 +121,7 @@
     "brand": "Seat", "model": "Leon", "year": 2024,
     "body_type": "hatchback", "fuel_type": "diesel",
     "color": "Midnight Black", "mileage": 0, "condition": "new",
-    "unit_price": 27000.00, "vin": "VSSZZZ5FZNA000014",
+    "currency": "MXN", "unit_price": 479900.00, "vin": "VSSZZZ5FZNA000014",
     "inventory_status": "available",
     "description": "Leon hatchback diesel, midnight black"
   },
@@ -130,7 +130,7 @@
     "brand": "Seat", "model": "Ateca", "year": 2024,
     "body_type": "suv", "fuel_type": "hybrid",
     "color": "Urban Silver", "mileage": 0, "condition": "new",
-    "unit_price": 33000.00, "vin": "VSSZZZ5FZNA000015",
+    "currency": "MXN", "unit_price": 589900.00, "vin": "VSSZZZ5FZNA000015",
     "inventory_status": "available",
     "description": "Ateca SUV hybrid, urban silver"
   },
@@ -139,7 +139,7 @@
     "brand": "Volkswagen", "model": "Golf", "year": 2022,
     "body_type": "hatchback", "fuel_type": "petrol",
     "color": "Indium Blue", "mileage": 28000, "condition": "used",
-    "unit_price": 18900.00, "vin": "WVWZZZ1KZAW099001",
+    "currency": "MXN", "unit_price": 319900.00, "vin": "WVWZZZ1KZAW099001",
     "inventory_status": "available",
     "description": "Pre-owned Golf, 28000km, excellent condition"
   },
@@ -148,73 +148,73 @@
     "brand": "Seat", "model": "Leon", "year": 2021,
     "body_type": "hatchback", "fuel_type": "diesel",
     "color": "Racing Red", "mileage": 45000, "condition": "used",
-    "unit_price": 15500.00, "vin": "VSSZZZ5FZNA099002",
+    "currency": "MXN", "unit_price": 269900.00, "vin": "VSSZZZ5FZNA099002",
     "inventory_status": "available",
     "description": "Pre-owned Leon, 45000km, good condition"
   },
   {
     "product_id": 18, "category": "Insurance", "name": "Basic Insurance",
-    "unit_price": 350.00, "inventory_status": "always_available",
+    "currency": "MXN", "unit_price": 6500.00, "inventory_status": "always_available",
     "description": "Third-party liability coverage, 12 months"
   },
   {
     "product_id": 19, "category": "Insurance", "name": "Comprehensive Insurance",
-    "unit_price": 750.00, "inventory_status": "always_available",
+    "currency": "MXN", "unit_price": 14500.00, "inventory_status": "always_available",
     "description": "Full coverage incl. theft and natural events, 12 months"
   },
   {
     "product_id": 20, "category": "Insurance", "name": "Premium Insurance",
-    "unit_price": 1100.00, "inventory_status": "always_available",
+    "currency": "MXN", "unit_price": 21500.00, "inventory_status": "always_available",
     "description": "Full coverage + roadside assistance + courtesy car, 12 months"
   },
   {
     "product_id": 21, "category": "Tire Service", "name": "Tire Rotation",
-    "unit_price": 80.00, "inventory_status": "always_available",
+    "currency": "MXN", "unit_price": 1500.00, "inventory_status": "always_available",
     "description": "Rotate all 4 tires for even wear"
   },
   {
     "product_id": 22, "category": "Tire Service", "name": "Winter Tire Set",
-    "unit_price": 620.00, "inventory_status": "always_available",
+    "currency": "MXN", "unit_price": 12000.00, "inventory_status": "always_available",
     "description": "Full set of 4 winter tires fitted and balanced"
   },
   {
     "product_id": 23, "category": "Tire Service", "name": "Run-Flat Tire Set",
-    "unit_price": 890.00, "inventory_status": "always_available",
+    "currency": "MXN", "unit_price": 17500.00, "inventory_status": "always_available",
     "description": "Full set of 4 run-flat tires fitted and balanced"
   },
   {
     "product_id": 24, "category": "Interior", "name": "Seat Cover Set",
-    "unit_price": 480.00, "inventory_status": "always_available",
+    "currency": "MXN", "unit_price": 9500.00, "inventory_status": "always_available",
     "description": "Premium leather seat cover set for 5 seats"
   },
   {
     "product_id": 25, "category": "Interior", "name": "Floor Mat Set",
-    "unit_price": 120.00, "inventory_status": "always_available",
+    "currency": "MXN", "unit_price": 2400.00, "inventory_status": "always_available",
     "description": "All-weather rubber floor mats, full set"
   },
   {
     "product_id": 26, "category": "Interior", "name": "Interior Trim Kit",
-    "unit_price": 350.00, "inventory_status": "always_available",
+    "currency": "MXN", "unit_price": 6800.00, "inventory_status": "always_available",
     "description": "Carbon-look interior trim replacement kit"
   },
   {
     "product_id": 27, "category": "Maintenance", "name": "Annual Service",
-    "unit_price": 299.00, "inventory_status": "always_available",
+    "currency": "MXN", "unit_price": 5800.00, "inventory_status": "always_available",
     "description": "Full annual inspection and oil change"
   },
   {
     "product_id": 28, "category": "Maintenance", "name": "Brake Service",
-    "unit_price": 380.00, "inventory_status": "always_available",
+    "currency": "MXN", "unit_price": 7500.00, "inventory_status": "always_available",
     "description": "Front and rear brake pad replacement"
   },
   {
     "product_id": 29, "category": "Maintenance", "name": "AC Recharge",
-    "unit_price": 150.00, "inventory_status": "always_available",
+    "currency": "MXN", "unit_price": 2900.00, "inventory_status": "always_available",
     "description": "Air conditioning system recharge and check"
   },
   {
     "product_id": 30, "category": "Maintenance", "name": "Battery Check & Replace",
-    "unit_price": 220.00, "inventory_status": "always_available",
+    "currency": "MXN", "unit_price": 4200.00, "inventory_status": "always_available",
     "description": "Battery health check and replacement if needed"
   }
 ]

@@ -1,94 +1,133 @@
 [
   {
     "client_id": 1, "type": "existing",
-    "first_name": "Carlos", "last_name": "Martínez",
-    "email": "carlos.martinez@email.com", "phone": "+34 612 111 001",
-    "address": "Calle Mayor 12, Madrid", "tax_id": "12345678A",
+    "first_name": "Carlos", "last_name": "Martínez Herrera",
+    "email": "carlos.martinez@email.com", "phone": "+52 55 1234 5601",
+    "address": "Av. Insurgentes Sur 1602, Col. Crédito Constructor, Ciudad de México, CDMX",
+    "tax_id": "MAHC780312KL5", "tax_id_type": "RFC (México)",
     "preferred_brand": "Volkswagen",
     "owned_vehicles": [
-      { "client_vehicle_id": 1, "product_id": 1, "car": "VW Golf 2024 - White", "license_plate": "1234 ABC", "acquired_at": "2022-03-15" }
+      { "client_vehicle_id": 1, "product_id": 1, "car": "VW Golf 2024 - White", "license_plate": "CDMX-123-AB", "acquired_at": "2022-03-15" }
     ]
   },
   {
     "client_id": 2, "type": "existing",
-    "first_name": "Laura", "last_name": "Sánchez",
-    "email": "laura.sanchez@email.com", "phone": "+34 612 111 002",
-    "address": "Av. Diagonal 45, Barcelona", "tax_id": "23456789B",
+    "first_name": "Laura", "last_name": "Sánchez Domínguez",
+    "email": "laura.sanchez@email.com", "phone": "+52 33 2345 6702",
+    "address": "Av. Vallarta 3233, Col. Vallarta Poniente, Guadalajara, Jalisco",
+    "tax_id": "SADL850624MN3", "tax_id_type": "RFC (México)",
     "preferred_brand": "Audi",
     "owned_vehicles": [
-      { "client_vehicle_id": 2, "product_id": 7, "car": "Audi A3 2024 - Black", "license_plate": "5678 DEF", "acquired_at": "2021-07-20" }
+      { "client_vehicle_id": 2, "product_id": 7, "car": "Audi A3 2024 - Black", "license_plate": "JAL-456-CD", "acquired_at": "2021-07-20" }
     ]
   },
   {
     "client_id": 3, "type": "existing",
-    "first_name": "Miguel", "last_name": "López",
-    "email": "miguel.lopez@email.com", "phone": "+34 612 111 003",
-    "address": "Gran Vía 8, Bilbao", "tax_id": "34567890C",
+    "first_name": "Miguel", "last_name": "López Fuentes",
+    "email": "miguel.lopez@email.com", "phone": "+52 81 3456 7803",
+    "address": "Av. Garza Sada 2501, Col. Tecnológico, Monterrey, Nuevo León",
+    "tax_id": "LOFM910715PQ8", "tax_id_type": "RFC (México)",
     "preferred_brand": "Seat",
     "owned_vehicles": [
-      { "client_vehicle_id": 3, "product_id": 11, "car": "Seat Ibiza 2024 - Red", "license_plate": "9012 GHI", "acquired_at": "2023-01-10" }
+      { "client_vehicle_id": 3, "product_id": 11, "car": "Seat Ibiza 2024 - Red", "license_plate": "NL-789-EF", "acquired_at": "2023-01-10" }
     ]
   },
   {
     "client_id": 4, "type": "existing",
-    "first_name": "Ana", "last_name": "García",
-    "email": "ana.garcia@email.com", "phone": "+34 612 111 004",
-    "address": "Calle Sierpes 3, Sevilla", "tax_id": "45678901D",
+    "first_name": "Ana", "last_name": "García Villanueva",
+    "email": "ana.garcia@email.com", "phone": "+52 222 4567 8904",
+    "address": "Blvd. Atlixcáyotl 5500, Reserva Territorial Atlixcáyotl, Puebla, Puebla",
+    "tax_id": "GAVA760430RS2", "tax_id_type": "RFC (México)",
     "preferred_brand": "Volkswagen",
     "owned_vehicles": [
-      { "client_vehicle_id": 4, "product_id": 3, "car": "VW Tiguan 2024 - Silver", "license_plate": "3456 JKL", "acquired_at": "2020-11-05" }
+      { "client_vehicle_id": 4, "product_id": 3, "car": "VW Tiguan 2024 - Silver", "license_plate": "PUE-321-GH", "acquired_at": "2020-11-05" }
     ]
   },
   {
     "client_id": 5, "type": "existing",
-    "first_name": "Pedro", "last_name": "Fernández",
-    "email": "pedro.fernandez@email.com", "phone": "+34 612 111 005",
-    "address": "Paseo de Gracia 22, Barcelona", "tax_id": "56789012E",
+    "first_name": "Pedro", "last_name": "Fernández Castillo",
+    "email": "pedro.fernandez@email.com", "phone": "+52 998 5678 9005",
+    "address": "Av. Tulum 192, Col. Centro, Cancún, Quintana Roo",
+    "tax_id": "FECP830918TU7", "tax_id_type": "RFC (México)",
     "preferred_brand": "Audi",
     "owned_vehicles": [
-      { "client_vehicle_id": 5, "product_id": 8, "car": "Audi Q5 2024 - Grey", "license_plate": "7890 MNO", "acquired_at": "2022-09-30" }
+      { "client_vehicle_id": 5, "product_id": 8, "car": "Audi Q5 2024 - Grey", "license_plate": "QR-654-IJ", "acquired_at": "2022-09-30" }
     ]
   },
   {
     "client_id": 6, "type": "new",
-    "first_name": "Sofía", "last_name": "Ruiz",
-    "email": "sofia.ruiz@email.com", "phone": "+34 612 111 006",
-    "address": "Calle Larios 5, Málaga", "tax_id": "67890123F",
+    "first_name": "Sofía", "last_name": "Ruiz Mendoza",
+    "email": "sofia.ruiz@email.com", "phone": "+52 664 6789 0106",
+    "address": "Blvd. Agua Caliente 4558, Col. Aviación, Tijuana, Baja California",
+    "tax_id": "RUMS950210BC4", "tax_id_type": "RFC (México)",
     "preferred_brand": "Seat",
     "owned_vehicles": []
   },
   {
     "client_id": 7, "type": "new",
-    "first_name": "Javier", "last_name": "Torres",
-    "email": "javier.torres@email.com", "phone": "+34 612 111 007",
-    "address": "Rambla Nova 10, Tarragona", "tax_id": "78901234G",
+    "first_name": "Javier", "last_name": "Torres Espinoza",
+    "email": "javier.torres@email.com", "phone": "+52 55 7890 1207",
+    "address": "Calle Horacio 1855, Col. Polanco, Ciudad de México, CDMX",
+    "tax_id": "TOEJ001115CD9", "tax_id_type": "RFC (México)",
     "preferred_brand": "Volkswagen",
     "owned_vehicles": []
   },
   {
     "client_id": 8, "type": "new",
-    "first_name": "Elena", "last_name": "Moreno",
-    "email": "elena.moreno@email.com", "phone": "+34 612 111 008",
-    "address": "Calle Colón 7, Valencia", "tax_id": "89012345H",
+    "first_name": "Elena", "last_name": "Moreno Reyes",
+    "email": "elena.moreno@email.com", "phone": "+52 442 8901 2308",
+    "address": "Av. 5 de Febrero 1001, Col. Santa Fe, Querétaro, Querétaro",
+    "tax_id": "MORE980703QR6", "tax_id_type": "RFC (México)",
     "preferred_brand": "Audi",
     "owned_vehicles": []
   },
   {
     "client_id": 9, "type": "new",
-    "first_name": "Roberto", "last_name": "Jiménez",
-    "email": "roberto.jimenez@email.com", "phone": "+34 612 111 009",
-    "address": "Av. Libertad 33, Zaragoza", "tax_id": "90123456I",
+    "first_name": "Roberto", "last_name": "Jiménez Vargas",
+    "email": "roberto.jimenez@email.com", "phone": "+52 33 9012 3409",
+    "address": "Av. López Mateos Sur 2077, Col. Chapalita, Guadalajara, Jalisco",
+    "tax_id": "JIVR870524JL1", "tax_id_type": "RFC (México)",
     "preferred_brand": null,
     "owned_vehicles": []
   },
   {
     "client_id": 10, "type": "existing",
-    "first_name": "Isabel", "last_name": "Navarro",
-    "email": "isabel.navarro@email.com", "phone": "+34 612 111 010",
-    "address": "Calle Real 18, Valladolid", "tax_id": "01234567J",
+    "first_name": "Isabel", "last_name": "Navarro Gutiérrez",
+    "email": "isabel.navarro@email.com", "phone": "+52 55 0123 4510",
+    "address": "Paseo de la Reforma 350, Col. Juárez, Ciudad de México, CDMX",
+    "tax_id": "NAGI920811MX3", "tax_id_type": "RFC (México)",
     "preferred_brand": "Volkswagen",
     "owned_vehicles": [
-      { "client_vehicle_id": 6, "product_id": 2, "car": "VW Golf 2024 - Black", "license_plate": "2345 PQR", "acquired_at": "2021-05-18" }
+      { "client_vehicle_id": 6, "product_id": 2, "car": "VW Golf 2024 - Black", "license_plate": "CDMX-987-KL", "acquired_at": "2021-05-18" }
+    ]
+  },
+  {
+    "client_id": 11, "type": "new",
+    "first_name": "Azael Job", "last_name": "Contreras Aguirre",
+    "email": "azael.contreras@email.com", "phone": "+52 55 1234 5611",
+    "address": "Av. Insurgentes Sur 1234, Col. Del Valle, Ciudad de México, CDMX",
+    "tax_id": "COAA931108K12", "tax_id_type": "RFC (México)",
+    "preferred_brand": "Volkswagen",
+    "owned_vehicles": []
+  },
+  {
+    "client_id": 12, "type": "new",
+    "first_name": "Karla Adriana", "last_name": "Rivera González",
+    "email": "karla.rivera@email.com", "phone": "+52 33 9876 5412",
+    "address": "Calle Juárez 456, Col. Centro, Guadalajara, Jalisco",
+    "tax_id": "RIGK8811127K9", "tax_id_type": "RFC (México)",
+    "preferred_brand": "Audi",
+    "owned_vehicles": []
+  },
+  {
+    "client_id": 13, "type": "existing",
+    "first_name": "Lizzete Eugenia", "last_name": "Quevedo Roldán",
+    "email": "lizzete.quevedo@email.com", "phone": "+52 81 5555 7813",
+    "address": "Av. Constitución 789, Col. Obispado, Monterrey, Nuevo León",
+    "tax_id": "QURL161092FA2", "tax_id_type": "RFC (México)",
+    "preferred_brand": "Seat",
+    "owned_vehicles": [
+      { "client_vehicle_id": 7, "product_id": 14, "car": "Seat Leon 2024 - Black", "license_plate": "NL-123-AB", "acquired_at": "2024-01-20" }
     ]
   }
 ]
