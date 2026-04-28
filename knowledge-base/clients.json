@@ -1,0 +1,94 @@
+[
+  {
+    "client_id": 1, "type": "existing",
+    "first_name": "Carlos", "last_name": "Martínez",
+    "email": "carlos.martinez@email.com", "phone": "+34 612 111 001",
+    "address": "Calle Mayor 12, Madrid", "tax_id": "12345678A",
+    "preferred_brand": "Volkswagen",
+    "owned_vehicles": [
+      { "client_vehicle_id": 1, "product_id": 1, "car": "VW Golf 2024 - White", "license_plate": "1234 ABC", "acquired_at": "2022-03-15" }
+    ]
+  },
+  {
+    "client_id": 2, "type": "existing",
+    "first_name": "Laura", "last_name": "Sánchez",
+    "email": "laura.sanchez@email.com", "phone": "+34 612 111 002",
+    "address": "Av. Diagonal 45, Barcelona", "tax_id": "23456789B",
+    "preferred_brand": "Audi",
+    "owned_vehicles": [
+      { "client_vehicle_id": 2, "product_id": 7, "car": "Audi A3 2024 - Black", "license_plate": "5678 DEF", "acquired_at": "2021-07-20" }
+    ]
+  },
+  {
+    "client_id": 3, "type": "existing",
+    "first_name": "Miguel", "last_name": "López",
+    "email": "miguel.lopez@email.com", "phone": "+34 612 111 003",
+    "address": "Gran Vía 8, Bilbao", "tax_id": "34567890C",
+    "preferred_brand": "Seat",
+    "owned_vehicles": [
+      { "client_vehicle_id": 3, "product_id": 11, "car": "Seat Ibiza 2024 - Red", "license_plate": "9012 GHI", "acquired_at": "2023-01-10" }
+    ]
+  },
+  {
+    "client_id": 4, "type": "existing",
+    "first_name": "Ana", "last_name": "García",
+    "email": "ana.garcia@email.com", "phone": "+34 612 111 004",
+    "address": "Calle Sierpes 3, Sevilla", "tax_id": "45678901D",
+    "preferred_brand": "Volkswagen",
+    "owned_vehicles": [
+      { "client_vehicle_id": 4, "product_id": 3, "car": "VW Tiguan 2024 - Silver", "license_plate": "3456 JKL", "acquired_at": "2020-11-05" }
+    ]
+  },
+  {
+    "client_id": 5, "type": "existing",
+    "first_name": "Pedro", "last_name": "Fernández",
+    "email": "pedro.fernandez@email.com", "phone": "+34 612 111 005",
+    "address": "Paseo de Gracia 22, Barcelona", "tax_id": "56789012E",
+    "preferred_brand": "Audi",
+    "owned_vehicles": [
+      { "client_vehicle_id": 5, "product_id": 8, "car": "Audi Q5 2024 - Grey", "license_plate": "7890 MNO", "acquired_at": "2022-09-30" }
+    ]
+  },
+  {
+    "client_id": 6, "type": "new",
+    "first_name": "Sofía", "last_name": "Ruiz",
+    "email": "sofia.ruiz@email.com", "phone": "+34 612 111 006",
+    "address": "Calle Larios 5, Málaga", "tax_id": "67890123F",
+    "preferred_brand": "Seat",
+    "owned_vehicles": []
+  },
+  {
+    "client_id": 7, "type": "new",
+    "first_name": "Javier", "last_name": "Torres",
+    "email": "javier.torres@email.com", "phone": "+34 612 111 007",
+    "address": "Rambla Nova 10, Tarragona", "tax_id": "78901234G",
+    "preferred_brand": "Volkswagen",
+    "owned_vehicles": []
+  },
+  {
+    "client_id": 8, "type": "new",
+    "first_name": "Elena", "last_name": "Moreno",
+    "email": "elena.moreno@email.com", "phone": "+34 612 111 008",
+    "address": "Calle Colón 7, Valencia", "tax_id": "89012345H",
+    "preferred_brand": "Audi",
+    "owned_vehicles": []
+  },
+  {
+    "client_id": 9, "type": "new",
+    "first_name": "Roberto", "last_name": "Jiménez",
+    "email": "roberto.jimenez@email.com", "phone": "+34 612 111 009",
+    "address": "Av. Libertad 33, Zaragoza", "tax_id": "90123456I",
+    "preferred_brand": null,
+    "owned_vehicles": []
+  },
+  {
+    "client_id": 10, "type": "existing",
+    "first_name": "Isabel", "last_name": "Navarro",
+    "email": "isabel.navarro@email.com", "phone": "+34 612 111 010",
+    "address": "Calle Real 18, Valladolid", "tax_id": "01234567J",
+    "preferred_brand": "Volkswagen",
+    "owned_vehicles": [
+      { "client_vehicle_id": 6, "product_id": 2, "car": "VW Golf 2024 - Black", "license_plate": "2345 PQR", "acquired_at": "2021-05-18" }
+    ]
+  }
+]
