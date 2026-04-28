@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal'
 import './SegurosSection.css'
 
@@ -11,7 +12,7 @@ export default function SegurosSection() {
           <div className="section-label">02 — Seguros</div>
           <div className="section-title">Protección sin límites</div>
         </div>
-        <a href="#" className="section-link">Ver todos los planes →</a>
+        <Link to="/insurance" className="section-link">Ver todos los planes →</Link>
       </div>
 
       <div className="seguros-layout">
@@ -22,8 +23,8 @@ export default function SegurosSection() {
             <cite>Beneficio exclusivo AutoFinance</cite>
           </div>
           <div className="seguros-actions">
-            <a href="#" className="btn-primary">Cotizar mi seguro</a>
-            <a href="#" className="btn-outline">Ver coberturas</a>
+            <Link to="/insurance" className="btn-primary">Cotizar mi seguro</Link>
+            <Link to="/insurance" className="btn-outline">Ver coberturas</Link>
           </div>
         </div>
 

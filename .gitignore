@@ -1,0 +1,4 @@
+.vscode
+
+# Front-end dependencies
+front-end/node_modules/

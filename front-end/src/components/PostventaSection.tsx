@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal'
 import './PostventaSection.css'
 
@@ -20,7 +21,7 @@ export default function PostventaSection() {
           <div className="section-label">03 — Productos Postventa</div>
           <div className="section-title">Beneficios que duran contigo</div>
         </div>
-        <a href="#" className="section-link">Conocer todos →</a>
+        <Link to="/after-sales" className="section-link">Conocer todos →</Link>
       </div>
 
       <div className="postventa-grid">
@@ -54,8 +55,8 @@ export default function PostventaSection() {
           <p>Un asesor especializado te acompañará desde la elección de tu vehículo hasta la activación de todos tus beneficios.</p>
         </div>
         <div className="pv-banner-actions">
-          <a href="#venta" className="btn-primary">Ver vehículos</a>
-          <a href="#" className="btn-outline">Hablar con un asesor</a>
+          <Link to="/car" className="btn-primary">Ver vehículos</Link>
+          <Link to="/after-sales" className="btn-outline">Hablar con un asesor</Link>
         </div>
       </div>
     </section>
