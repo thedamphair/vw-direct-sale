@@ -1,0 +1,212 @@
+/* ── Page Hero ── */
+.page-hero {
+  margin-top: 68px; /* nav height */
+  min-height: 340px;
+  position: relative;
+  display: flex; align-items: flex-end;
+  background: var(--navy) center/cover no-repeat;
+}
+.page-hero-insurance  { background-color: #001E50; }
+.page-hero-aftersales { background-color: #001030; }
+
+.page-hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to right, rgba(0,30,80,0.92) 50%, rgba(0,30,80,0.6));
+}
+.page-hero-content {
+  position: relative; z-index: 1;
+  padding: 52px 64px;
+}
+.page-breadcrumb {
+  font-size: 0.72rem; color: rgba(255,255,255,0.4);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.page-breadcrumb a { color: rgba(255,255,255,0.4); text-decoration: none; }
+.page-breadcrumb a:hover { color: rgba(255,255,255,0.7); }
+
+.page-label {
+  font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 12px;
+  display: flex; align-items: center; gap: 10px;
+}
+.page-label::before { content: ''; width: 24px; height: 2px; background: var(--accent); }
+
+.page-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 800; color: #fff;
+  text-transform: uppercase; line-height: 0.95;
+  margin-bottom: 16px;
+}
+.page-title em { font-style: normal; color: var(--accent); }
+
+.page-subtitle {
+  font-size: 0.9rem; color: rgba(255,255,255,0.55);
+  line-height: 1.6; max-width: 520px;
+}
+
+/* ── Financing bar ── */
+.page-fin-bar {
+  background: var(--navy);
+  padding: 20px 64px;
+  display: flex; align-items: center; gap: 0;
+}
+.fin-bar-item { display: flex; flex-direction: column; align-items: center; padding: 0 32px; }
+.fin-bar-val { font-family: 'Barlow Condensed', sans-serif; font-size: 1.8rem; font-weight: 800; color: var(--accent); line-height: 1; }
+.fin-bar-key { font-size: 0.65rem; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 2px; }
+.fin-bar-sep { width: 1px; height: 36px; background: rgba(255,255,255,0.1); }
+.fin-bar-cta {
+  margin-left: auto;
+  background: var(--accent); color: #fff;
+  padding: 11px 26px; border-radius: 2px;
+  font-size: 0.8rem; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  text-decoration: none; transition: opacity .2s;
+}
+.fin-bar-cta:hover { opacity: 0.85; }
+
+/* ── Callout bar ── */
+.page-callout-bar {
+  background: var(--off); border-bottom: 1px solid var(--border);
+  padding: 20px 64px;
+  display: flex; align-items: center; gap: 16px;
+}
+.callout-bar-icon { font-size: 1.4rem; flex-shrink: 0; }
+.page-callout-bar p { font-size: 0.9rem; color: var(--text); line-height: 1.5; }
+.page-callout-bar strong { color: var(--navy); }
+.callout-bar-badge {
+  margin-left: auto; flex-shrink: 0;
+  font-size: 0.65rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--accent); border: 1px solid rgba(0,113,227,0.3);
+  padding: 5px 14px; border-radius: 2px;
+  background: rgba(0,113,227,0.06);
+}
+
+/* ── Page sections ── */
+.page-section { padding: 80px 64px; }
+.page-section-header { margin-bottom: 48px; }
+
+/* ── Car product grid ── */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px; background: var(--border);
+  border: 1px solid var(--border);
+}
+.product-card { background: var(--white); transition: background .2s; cursor: pointer; }
+.product-card:hover { background: var(--off); }
+
+.product-img {
+  background: var(--off); min-height: 200px;
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.product-img-placeholder {
+  width: 80%; height: 60%;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0,30,80,0.04) 10px, rgba(0,30,80,0.04) 11px);
+  display: flex; align-items: center; justify-content: center;
+}
+.product-info { padding: 22px 26px; }
+.product-brand { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+.product-name { font-family: 'Barlow Condensed', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--navy); text-transform: uppercase; margin-bottom: 10px; }
+.product-price-row { display: flex; align-items: baseline; gap: 6px; }
+.product-price { font-family: 'Barlow Condensed', sans-serif; font-size: 1.6rem; font-weight: 700; color: var(--navy); }
+.product-currency { font-size: 0.72rem; color: var(--muted); }
+.product-monthly { font-size: 0.75rem; color: var(--accent); font-weight: 600; margin-top: 3px; margin-bottom: 14px; }
+.product-specs { display: flex; gap: 16px; padding: 12px 0; border-top: 1px solid var(--border); margin-bottom: 16px; }
+
+.product-cta {
+  display: block; width: 100%;
+  background: var(--navy); color: #fff;
+  border: none; cursor: pointer;
+  padding: 12px; text-align: center;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.76rem; font-weight: 600;
+  letter-spacing: 0.07em; text-transform: uppercase;
+  transition: background .2s;
+}
+.product-cta:hover { background: var(--blue); }
+
+/* ── Insurance grid ── */
+.insurance-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1px; background: var(--border); border: 1px solid var(--border);
+}
+.insurance-card {
+  background: var(--white); padding: 32px;
+  display: flex; flex-direction: column; gap: 0;
+  transition: background .2s; cursor: pointer;
+}
+.insurance-card:hover { background: #F8FAFF; }
+.insurance-card.highlighted { background: var(--navy); }
+.insurance-card.highlighted:hover { background: #002468; }
+
+.ins-tag { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+.insurance-card.highlighted .ins-tag { color: rgba(255,255,255,0.5); }
+.ins-name { font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--navy); text-transform: uppercase; margin-bottom: 10px; }
+.insurance-card.highlighted .ins-name { color: #fff; }
+.ins-desc { font-size: 0.84rem; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
+.insurance-card.highlighted .ins-desc { color: rgba(255,255,255,0.5); }
+.ins-features { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; flex: 1; }
+.ins-features li { font-size: 0.78rem; color: var(--muted); padding-left: 14px; position: relative; }
+.insurance-card.highlighted .ins-features li { color: rgba(255,255,255,0.55); }
+.ins-features li::before { content: ''; position: absolute; left: 0; top: 7px; width: 6px; height: 1px; background: var(--accent); }
+.ins-price-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 20px; }
+.ins-price { font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 800; color: var(--accent); }
+.ins-period { font-size: 0.75rem; color: var(--muted); }
+.insurance-card.highlighted .ins-period { color: rgba(255,255,255,0.4); }
+
+/* ── After-sales grid ── */
+.aftersales-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1px; background: var(--border); border: 1px solid var(--border);
+}
+.aftersales-card {
+  background: var(--white); padding: 0;
+  display: flex; flex-direction: column;
+  transition: background .2s; cursor: pointer;
+}
+.aftersales-card:hover { background: var(--off); }
+.as-top { padding: 32px 28px 20px; flex: 1; }
+.as-icon { font-size: 1.4rem; margin-bottom: 16px; }
+.as-name { font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--navy); text-transform: uppercase; margin-bottom: 10px; }
+.as-desc { font-size: 0.84rem; color: var(--muted); line-height: 1.7; }
+.as-bottom { padding: 16px 28px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+.as-price-row { display: flex; flex-direction: column; }
+.as-price { font-family: 'Barlow Condensed', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--navy); }
+.as-period { font-size: 0.65rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.aftersales-card .product-cta { margin: 0; border-top: 1px solid var(--border); }
+
+/* ── Page banner ── */
+.page-banner {
+  margin: 0 64px 80px;
+  background: var(--off); border: 1px solid var(--border);
+  padding: 44px 52px;
+  display: flex; align-items: center; justify-content: space-between; gap: 40px;
+}
+.page-banner h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 800; color: var(--navy); text-transform: uppercase; line-height: 1; margin-bottom: 8px; }
+.page-banner p { color: var(--muted); font-size: 0.9rem; max-width: 460px; line-height: 1.7; }
+.page-banner-actions { display: flex; gap: 12px; flex-shrink: 0; }
+
+.btn-primary { background: var(--navy); color: #fff; padding: 13px 32px; border-radius: 2px; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; display: inline-block; transition: background .2s; }
+.btn-primary:hover { background: var(--blue); }
+.btn-outline { border: 1.5px solid var(--navy); color: var(--navy); padding: 13px 32px; border-radius: 2px; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; display: inline-block; transition: border-color .2s, color .2s; }
+.btn-outline:hover { border-color: var(--blue); color: var(--blue); }
+
+/* reuse from landing */
+.section-label { display: flex; align-items: center; gap: 12px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+.section-label::before { content: ''; width: 28px; height: 2px; background: var(--accent); flex-shrink: 0; }
+.section-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 800; text-transform: uppercase; line-height: 0.95; color: var(--navy); }
+.car-badge-tag { position: absolute; top: 14px; left: 14px; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 10px; }
+.car-badge-tag.new  { background: var(--navy); color: #fff; }
+.car-badge-tag.hot  { background: #C0392B; color: #fff; }
+.car-badge-tag.elec { background: var(--accent); color: #fff; }
+.img-label { font-family: monospace; font-size: 0.62rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
+.spec { display: flex; flex-direction: column; gap: 2px; }
+.spec-val { font-family: 'Barlow Condensed', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--navy); }
+.spec-key { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.pv-tag { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; background: var(--off2); color: var(--muted); }
+.pv-tag.blue { background: rgba(0,85,200,0.08); color: var(--accent); }

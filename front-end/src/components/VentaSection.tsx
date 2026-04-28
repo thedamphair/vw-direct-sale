@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal'
 import carsImg from '../assets/cars.png'
 import './VentaSection.css'
@@ -20,7 +21,7 @@ export default function VentaSection() {
           <div className="section-label">01 — Venta de Autos</div>
           <div className="section-title">Encuentra tu<br />vehículo ideal</div>
         </div>
-        <a href="#" className="section-link">Ver catálogo completo →</a>
+        <Link to="/car" className="section-link">Ver catálogo completo →</Link>
       </div>
 
       <div className="cars-grid">
@@ -55,7 +56,7 @@ export default function VentaSection() {
                   ))}
                 </div>
               )}
-              <a href="#" className="car-cta">{car.featured ? 'Cotizar este modelo' : 'Ver oferta'}</a>
+              <Link to="/car" className="car-cta">{car.featured ? 'Cotizar este modelo' : 'Ver oferta'}</Link>
             </div>
           </div>
         ))}
@@ -71,7 +72,7 @@ export default function VentaSection() {
           <div className="rate"><div className="rate-val">84</div><div className="rate-label">Meses máx.</div></div>
           <div className="rate"><div className="rate-val">10%</div><div className="rate-label">Enganche mín.</div></div>
         </div>
-        <a href="#" className="fin-cta">Calcular mensualidad →</a>
+        <Link to="/car" className="fin-cta">Calcular mensualidad →</Link>
       </div>
     </section>
   )

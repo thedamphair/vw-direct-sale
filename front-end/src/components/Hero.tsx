@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import heroBg from '../assets/hero-bg.png'
 import carsImg from '../assets/cars.png'
 import './Hero.css'
@@ -18,7 +19,7 @@ export default function Hero() {
               <div className="hs-dot" />
               Entrega en 48 horas · Sin costo adicional
             </div>
-            <a href="#venta" className="hero-strip-cta">Comprar ahora →</a>
+            <Link to="/car" className="hero-strip-cta">Comprar ahora →</Link>
           </div>
         </div>
       </div>
@@ -26,7 +27,7 @@ export default function Hero() {
       {/* 3 panels */}
       <div className="hero-panels">
 
-        <a href="#venta" className="hero-panel hp-1">
+        <Link to="/car" className="hero-panel hp-1">
           <img src={carsImg} alt="Autos disponibles" className="panel-bg-img" />
           <svg className="panel-pattern" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
             <defs>
@@ -51,9 +52,9 @@ export default function Hero() {
               <div className="panel-arrow">→</div>
             </div>
           </div>
-        </a>
+        </Link>
 
-        <a href="#seguros" className="hero-panel hp-2">
+        <Link to="/insurance" className="hero-panel hp-2">
           <svg className="panel-pattern" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
             <defs>
               <pattern id="d2" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -76,9 +77,9 @@ export default function Hero() {
               <div className="panel-arrow">→</div>
             </div>
           </div>
-        </a>
+        </Link>
 
-        <a href="#postventa" className="hero-panel hp-3">
+        <Link to="/after-sales" className="hero-panel hp-3">
           <svg className="panel-pattern" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
             <defs>
               <pattern id="l3" width="22" height="22" patternUnits="userSpaceOnUse">
@@ -101,7 +102,7 @@ export default function Hero() {
               <div className="panel-arrow">→</div>
             </div>
           </div>
-        </a>
+        </Link>
 
       </div>
     </section>
