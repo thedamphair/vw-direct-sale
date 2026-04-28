@@ -19,7 +19,11 @@ export async function sendMessage(message: string, sessionId: string): Promise<s
   if (API_URL) {
     const res = await fetch(API_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      },
       body: JSON.stringify({ message, sessionId }),
     })
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
