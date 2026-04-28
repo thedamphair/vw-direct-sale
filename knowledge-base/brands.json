@@ -1,0 +1,5 @@
+[
+  { "brand_id": 1, "name": "Volkswagen" },
+  { "brand_id": 2, "name": "Audi" },
+  { "brand_id": 3, "name": "Seat" }
+]

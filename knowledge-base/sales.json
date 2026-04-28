@@ -1,0 +1,88 @@
+[
+  {
+    "sale_id": 1,
+    "client_id": 1, "client_name": "Carlos Martínez", "client_type": "existing",
+    "session_id": "sess-dummy-001",
+    "sale_date": "2024-02-10T10:30:00Z",
+    "status": "completed",
+    "lines": [
+      { "line_id": 1, "product_id": 5,  "product_name": "VW Passat 2024 - Grey",      "quantity": 1, "unit_price": 42000.00, "discount_code": null,       "discount_amount": 0.00,  "line_total": 42000.00 },
+      { "line_id": 2, "product_id": 19, "product_name": "Comprehensive Insurance",     "quantity": 1, "unit_price": 750.00,   "discount_code": "LOYALTY5",  "discount_amount": 37.50, "line_total": 712.50 },
+      { "line_id": 3, "product_id": 27, "product_name": "Annual Service",              "quantity": 1, "unit_price": 299.00,   "discount_code": "SERVICE15", "discount_amount": 44.85, "line_total": 254.15 }
+    ],
+    "payment_plan": {
+      "financing_type": "transfer", "provider": null,
+      "total_amount": 42966.65, "down_payment": 42966.65, "financed_amount": 0.00,
+      "installments": 1, "frequency": "single", "interest_rate": 0,
+      "status": "completed"
+    }
+  },
+  {
+    "sale_id": 2,
+    "client_id": 2, "client_name": "Laura Sánchez", "client_type": "existing",
+    "session_id": "sess-dummy-002",
+    "sale_date": "2024-03-05T14:00:00Z",
+    "status": "completed",
+    "lines": [
+      { "line_id": 4, "product_id": 10, "product_name": "Audi e-tron 2024 - Blue", "quantity": 1, "unit_price": 72000.00, "discount_code": "ELECTRIC500", "discount_amount": 500.00, "line_total": 71500.00 },
+      { "line_id": 5, "product_id": 20, "product_name": "Premium Insurance",        "quantity": 1, "unit_price": 1100.00,  "discount_code": "INSURANCE20", "discount_amount": 220.00, "line_total": 880.00 }
+    ],
+    "payment_plan": {
+      "financing_type": "external", "provider": "Santander Consumer Finance",
+      "total_amount": 72380.00, "down_payment": 10000.00, "financed_amount": 62380.00,
+      "installments": 48, "frequency": "monthly", "interest_rate": 4.90,
+      "external_reference": "SAN-2024-00892",
+      "status": "active",
+      "installment_amount": 1299.58
+    }
+  },
+  {
+    "sale_id": 3,
+    "client_id": 6, "client_name": "Sofía Ruiz", "client_type": "new",
+    "session_id": "sess-dummy-003",
+    "sale_date": "2024-04-18T11:15:00Z",
+    "status": "confirmed",
+    "lines": [
+      { "line_id": 6, "product_id": 13, "product_name": "Seat Arona 2024 - Orange", "quantity": 1, "unit_price": 24000.00, "discount_code": "NEWCLIENT10", "discount_amount": 2400.00, "line_total": 21600.00 },
+      { "line_id": 7, "product_id": 18, "product_name": "Basic Insurance",           "quantity": 1, "unit_price": 350.00,   "discount_code": "NEWCLIENT10", "discount_amount": 35.00,   "line_total": 315.00 },
+      { "line_id": 8, "product_id": 25, "product_name": "Floor Mat Set",             "quantity": 1, "unit_price": 120.00,   "discount_code": null,          "discount_amount": 0.00,    "line_total": 120.00 }
+    ],
+    "payment_plan": {
+      "financing_type": "internal", "provider": "VW Group Financial Services",
+      "total_amount": 22035.00, "down_payment": 3000.00, "financed_amount": 19035.00,
+      "installments": 24, "frequency": "monthly", "interest_rate": 3.50,
+      "status": "active",
+      "installment_amount": 793.13
+    }
+  },
+  {
+    "sale_id": 4,
+    "client_id": 4, "client_name": "Ana García", "client_type": "existing",
+    "session_id": "sess-dummy-004",
+    "sale_date": "2024-05-22T09:00:00Z",
+    "status": "completed",
+    "lines": [
+      { "line_id": 9,  "product_id": 28, "product_name": "Brake Service",    "client_vehicle": "VW Tiguan 2024 - Silver", "quantity": 1, "unit_price": 380.00, "discount_code": "SERVICE15", "discount_amount": 57.00, "line_total": 323.00 },
+      { "line_id": 10, "product_id": 22, "product_name": "Winter Tire Set",  "client_vehicle": "VW Tiguan 2024 - Silver", "quantity": 1, "unit_price": 620.00, "discount_code": "SERVICE15", "discount_amount": 93.00, "line_total": 527.00 },
+      { "line_id": 11, "product_id": 29, "product_name": "AC Recharge",      "client_vehicle": "VW Tiguan 2024 - Silver", "quantity": 1, "unit_price": 150.00, "discount_code": "SERVICE15", "discount_amount": 22.50, "line_total": 127.50 }
+    ],
+    "payment_plan": {
+      "financing_type": "card", "provider": null,
+      "total_amount": 977.50, "down_payment": 977.50, "financed_amount": 0.00,
+      "installments": 1, "frequency": "single", "interest_rate": 0,
+      "status": "completed"
+    }
+  },
+  {
+    "sale_id": 5,
+    "client_id": 7, "client_name": "Javier Torres", "client_type": "new",
+    "session_id": "sess-dummy-005",
+    "sale_date": "2024-07-01T16:45:00Z",
+    "status": "pending",
+    "lines": [
+      { "line_id": 12, "product_id": 6, "product_name": "VW ID.4 2024 - White", "quantity": 1, "unit_price": 45500.00, "discount_code": "ELECTRIC500", "discount_amount": 500.00, "line_total": 45000.00 }
+    ],
+    "payment_plan": null,
+    "note": "Sale in progress — agent session active, payment not yet confirmed, car still available in inventory"
+  }
+]
