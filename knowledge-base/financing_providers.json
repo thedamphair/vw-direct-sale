@@ -1,0 +1,26 @@
+[
+  {
+    "provider_id": 1,
+    "type": "internal",
+    "name": "VW Group Financial Services",
+    "contact_info": "finance@vwgroup-dealer.com",
+    "is_active": true,
+    "description": "In-house financing managed directly by the dealership. Offers competitive rates and flexible terms."
+  },
+  {
+    "provider_id": 2,
+    "type": "external",
+    "name": "Santander Consumer Finance",
+    "contact_info": "dealers@santander.es",
+    "is_active": true,
+    "description": "External bank financing partner. Handles large-value vehicle loans with fixed monthly installments."
+  },
+  {
+    "provider_id": 3,
+    "type": "external",
+    "name": "CaixaBank Financing",
+    "contact_info": "autofinance@caixabank.com",
+    "is_active": true,
+    "description": "External bank financing partner. Offers auto loans with flexible down payment options."
+  }
+]
