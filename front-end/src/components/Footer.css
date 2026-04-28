@@ -1,0 +1,14 @@
+.footer { background: var(--navy); padding: 56px 64px 36px; }
+
+.footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,0.07); margin-bottom: 28px; }
+
+.footer-brand .nav-logo { display: block; margin-bottom: 14px; text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.4rem; letter-spacing: 0.08em; color: #fff; text-transform: uppercase; }
+.footer-brand .nav-logo span { color: var(--accent); }
+.footer-brand p { font-size: 0.8rem; color: rgba(255,255,255,0.35); line-height: 1.7; max-width: 240px; }
+
+.footer-col h4 { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 18px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.footer-col a { color: rgba(255,255,255,0.3); text-decoration: none; font-size: 0.8rem; transition: color .2s; }
+.footer-col a:hover { color: rgba(255,255,255,0.8); }
+
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; font-size: 0.72rem; color: rgba(255,255,255,0.25); }
