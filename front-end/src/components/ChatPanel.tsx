@@ -16,7 +16,7 @@ interface Props {
 
 const WELCOME: Message = {
   role: 'assistant',
-  content: '¡Hola! Soy tu asesor AutoFinance. Puedo ayudarte a encontrar el auto ideal, cotizar un seguro o resolver cualquier duda sobre financiamiento. ¿En qué te puedo ayudar hoy?'
+  content: '¡Hola! Soy tu asesor de Volkswagen Financial Services. Puedo ayudarte a encontrar el auto ideal, cotizar un seguro o resolver cualquier duda sobre financiamiento. ¿En qué te puedo ayudar hoy?'
 }
 
 export default function ChatPanel({ open, onClose }: Props) {
@@ -63,9 +63,9 @@ export default function ChatPanel({ open, onClose }: Props) {
       {/* Header */}
       <div className="chat-header">
         <div className="chat-header-info">
-          <div className="chat-avatar">AF</div>
+          <div className="chat-avatar">VW</div>
           <div>
-            <div className="chat-title">Asesor AutoFinance</div>
+            <div className="chat-title">Asesor VW Financial</div>
             <div className="chat-status"><div className="status-dot" />En línea</div>
           </div>
         </div>
@@ -76,13 +76,13 @@ export default function ChatPanel({ open, onClose }: Props) {
       <div className="chat-messages">
         {messages.map((m, i) => (
           <div key={i} className={`chat-bubble ${m.role}`}>
-            {m.role === 'assistant' && <div className="bubble-avatar">AF</div>}
+            {m.role === 'assistant' && <div className="bubble-avatar">VW</div>}
             <div className="bubble-text">{m.content}</div>
           </div>
         ))}
         {loading && (
           <div className="chat-bubble assistant">
-            <div className="bubble-avatar">AF</div>
+            <div className="bubble-avatar">VW</div>
             <div className="bubble-text typing">
               <span /><span /><span />
             </div>
